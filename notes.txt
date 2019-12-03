@@ -1,0 +1,13 @@
+sept 11 2019
+
+hi notes.
+
+here's how this works now. buddy is the main. call python3 buddy.py to start automating chrome. It will open a page and navegate to bumble and click on the login with facebook page. Once this loads, you need to manually enter your login info and hit return. Once it's fully logged in and has loaded the swipe page, go back to terminal and press return to start rating and swiping!
+
+extract_face_img.py is where all the haar cascade algorithm stuff lives. It's where we screenshot the whole screen and find faces and return cropped smaller arrays of pixels containing those faces. In buddy, it will format those to pass through the net. 
+
+todo: train the net better
+
+things are basically working now. 
+
+Issue: the face detector still detects the small face icons in the chat section on the left side of the screen. I tried making it ignore them by upping the min size, but I think it's best if I just drag that part of the screen offscreen for now.  anyway, that's it!. Next step is to improve the model. 
